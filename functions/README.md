@@ -35,3 +35,25 @@ func myfunction(firstName string, lastName string) (string, error) {
 ```
 
 See full example in [multiple.go](multiple.go)
+
+## Anonymous Functions
+
+These are the same as regular functions except they lack the name in their function declaration. These functions can be defined within named functions and have access to any variables within its enclosing function.
+
+```go
+func addOne() func() int {
+  var x int
+  // we define and return an
+  // anonymous function which in turn
+  // returns an integer value
+  return func() int {
+    // this anonymous function
+    // has access to the x variable
+    // defined in the parent function
+    x++
+    return x + 1
+  }
+}
+```
+
+See full example in [anonymous.go](anonymous.go)
