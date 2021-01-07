@@ -88,3 +88,7 @@ myfloat := float64(myint)
 var myfloat2 float64
 myfloat2 := int(myfloat2)
 ```
+
+## Complex Numbers
+
+These are often overlooked and come in two distinct sizes, `complex32` and `complex64`.
