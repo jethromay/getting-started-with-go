@@ -21,3 +21,17 @@ func myFunction(firstName string, lastName string) (string) {
 ```
 
 See full example in [main.go](main.go)
+
+## Multiple results from a function
+
+Often we want to return multiple values from a function, with the result being the first value returned and any potential errors being returned in the second result.
+
+This practice is useful as it allows us to determine what to do with errors returned from the original function:
+
+```go
+func myfunction(firstName string, lastName string) (string, error) {
+  return firstName + " " + lastName, nil
+}
+```
+
+See full example in [multiple.go](multiple.go)
