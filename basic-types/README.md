@@ -92,3 +92,50 @@ myfloat2 := int(myfloat2)
 ## Complex Numbers
 
 These are often overlooked and come in two distinct sizes, `complex32` and `complex64`.
+
+## Booleans
+
+A boolean can be either true or false:
+
+```go
+var test bool
+test = true
+
+if test {
+    handleEvent()
+}
+```
+
+We can use the `\\` or `&&` operators to perform additional logic with booleans
+
+```go
+var isTrue bool = true
+var isFalse bool = false
+
+// AND
+if isTrue && isFalse {
+    fmt.Println("Both conditions need to be true")
+}
+
+// OR
+if isTrue || isFalse {
+    fmt.Println("Only one condition needs to be true")
+}
+```
+
+## Strings
+
+Strings are what we would call 'character slices' in Go. Strings can be defined in the following way:
+
+```go
+var myName string
+myName = "Jethro May"
+```
+
+## Constants
+
+Constants are values that do not change throughout the course of program execution
+
+```go
+const age = 29
+```
