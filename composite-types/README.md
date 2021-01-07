@@ -76,3 +76,5 @@ jethro.age = 18
 ## Nested Structs
 
 We can create structs within structs.
+
+See example in [main.go](main.go) for a detailed look into using nested structs.
