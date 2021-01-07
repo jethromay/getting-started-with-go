@@ -31,3 +31,44 @@ fmt.Println(weekDays)
 ```
 
 ## Maps
+
+A map is Go's representation of a hash table. It allows you to map one data type to another.
+
+In this example we create a map of YouTube channel names to their number of subscribers:
+
+```go
+youtubeSubscribers := map[string]int{
+  "TutorialEdge":     2240,
+  "MKBHD":            6580350,
+  "Fun Fun Function": 171220,
+}
+
+fmt.Println(youtubeSubscribers["MKBHD"]) // prints out 6580350
+```
+
+## Structs
+
+In Go we can create a `struct` which are data types that are aggregates of other data types.
+
+For example, we could create a `Person` in our application that has a number of fields within it, perhaps a `name` which is a `string` and `age` which is an `int`.
+
+```go
+// Person struct
+type Person struct {
+    name string
+    age int
+}
+
+// Declare new Person
+var myPerson Person
+```
+
+The advantage of using these struct is that we can effectively treat all of these values or fields as they are called as a single entity and modify that easily.
+
+```go
+// Declare new `jethro`
+jethro := Person{name: "Jethro", age: 29}
+
+// Change age to 18
+jethro.age = 18
+```
