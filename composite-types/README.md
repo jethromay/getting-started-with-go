@@ -72,3 +72,7 @@ jethro := Person{name: "Jethro", age: 29}
 // Change age to 18
 jethro.age = 18
 ```
+
+## Nested Structs
+
+We can create structs within structs.
