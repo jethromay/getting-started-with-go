@@ -18,7 +18,7 @@ func (e *Employee) PrintName() {
 
 func main() {
 	var employee Employee
-	employee.Name = "Elliot"
-	employee.UpdateName("Forbsey")
+	employee.Name = "Jethro"
+	employee.UpdateName("May")
 	employee.PrintName()
 }
